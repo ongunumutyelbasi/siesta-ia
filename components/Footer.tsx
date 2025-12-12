@@ -37,15 +37,15 @@ function AnimatedLink({ href, label }: { href: string, label: string }) {
                 animate={{ scaleX: isHovered ? 1 : 0 }}
                 transition={{ 
                     duration: 0.2, 
-                    ease: "easeInOut",
-                    originX: 0 
+                    ease: "easeInOut"
+                    // 🚨 FIX 1: REMOVED originX: 0 
                 }}
             />
         </Link>
     );
 }
 
-// 🚨 NEW: Reusable component for animated Anchor (for mailto/tel links) 🚨
+// Reusable component for animated Anchor (for mailto/tel links)
 function AnimatedAnchor({ href, label }: { href: string, label: string }) {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -64,8 +64,8 @@ function AnimatedAnchor({ href, label }: { href: string, label: string }) {
                 animate={{ scaleX: isHovered ? 1 : 0 }}
                 transition={{ 
                     duration: 0.2, 
-                    ease: "easeInOut",
-                    originX: 0 
+                    ease: "easeInOut"
+                    // 🚨 FIX 2: REMOVED originX: 0 
                 }}
             />
         </a>
@@ -114,11 +114,11 @@ export function Footer() {
             <h3 className="text-base font-medium text-gray-900 mb-4">İletişim</h3>
             <ul className="space-y-3">
               <li>
-                {/* 🚨 USED AnimatedAnchor 🚨 */}
+                {/* USED AnimatedAnchor */}
                 <AnimatedAnchor href="mailto:info@siestaia.com" label="info@siestaia.com" />
               </li>
               <li>
-                {/* 🚨 USED AnimatedAnchor and updated phone number 🚨 */}
+                {/* USED AnimatedAnchor and updated phone number */}
                 <AnimatedAnchor href="tel:+905340784419" label="+90 534 078 4419" />
               </li>
               <li className="text-sm font-light text-gray-600">
