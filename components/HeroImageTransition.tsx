@@ -13,7 +13,7 @@ const IMAGE_PATHS = {
 // Interval for continuous swapping (e.g., every 7 seconds after the first one)
 const CONTINUOUS_INTERVAL = 7000; 
 // 🚨 NEW: Delay before the FIRST transition starts (e.g., 500ms or 1000ms)
-const INITIAL_DELAY = 500; // 0.5 seconds - Set this low for a snappy start
+const INITIAL_DELAY = 1000; // 0.5 seconds - Set this low for a snappy start
 
 export function HeroImageTransition() {
   // Start with the dark image visible
