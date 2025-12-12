@@ -60,7 +60,7 @@ export function HeroImageTransition() {
         sizes="100vw"
         className={`
           object-cover absolute top-0 left-0 transition-opacity 
-          duration-1000 // 1 second transition (from last fix)
+          duration-3500 // 3.5 second transition
           ${isDarkVisible ? 'opacity-100' : 'opacity-0'}
         `}
       />
