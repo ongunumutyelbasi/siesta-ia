@@ -79,7 +79,7 @@ export function Footer() {
   return (
 
     <footer className="w-full bg-[var(--offWhite)] mt-0 md:mt-0">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 md:py-20">
         
         {/* 1. Main Grid Layout (Logo + Links) */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 border-b border-gray-100 pb-12">
