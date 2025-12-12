@@ -10,26 +10,34 @@ const IMAGE_PATHS = {
   dark: "/images/hero-dark.jpg",
 };
 
-// 🚨 FIX 1: ADJUST TIMING 
-// Let's speed up the interval (how often it swaps) to 7 seconds.
-const TRANSITION_INTERVAL = 7000; 
-
-// Let's set a fast, noticeable transition duration of 1 second (1000ms).
-// Note: We don't use this variable, we use a Tailwind class, but keeping it 
-// here for clarity if you need a duration variable elsewhere.
-// const TRANSITION_DURATION_MS = 1000; 
+// Interval for continuous swapping (e.g., every 7 seconds after the first one)
+const CONTINUOUS_INTERVAL = 7000; 
+// 🚨 NEW: Delay before the FIRST transition starts (e.g., 500ms or 1000ms)
+const INITIAL_DELAY = 500; // 0.5 seconds - Set this low for a snappy start
 
 export function HeroImageTransition() {
+  // Start with the dark image visible
   const [isDarkVisible, setIsDarkVisible] = useState(true);
 
   useEffect(() => {
-    // Timer to swap the images every 7 seconds
-    const timer = setInterval(() => {
-      setIsDarkVisible(prev => !prev);
-    }, TRANSITION_INTERVAL);
+    // 1. 🚨 FIX: Use a short timeout to trigger the FIRST transition quickly after mount
+    const initialTimeout = setTimeout(() => {
+      setIsDarkVisible(false); // Trigger the first fade-out
+    }, INITIAL_DELAY);
 
-    return () => clearInterval(timer);
-  }, []);
+    // 2. Set up the continuous timer for ALL subsequent swaps
+    // We start the interval *after* the initial timeout + transition duration,
+    // but for simplicity, let's keep the interval running consistently.
+    const continuousTimer = setInterval(() => {
+      setIsDarkVisible(prev => !prev);
+    }, CONTINUOUS_INTERVAL);
+
+    // Cleanup function
+    return () => {
+      clearTimeout(initialTimeout);
+      clearInterval(continuousTimer);
+    };
+  }, []); // Empty dependency array means this runs once on mount
 
   return (
     <div className="relative w-full aspect-[16/8] md:aspect-[16/7] overflow-hidden bg-gray-100">
@@ -52,8 +60,7 @@ export function HeroImageTransition() {
         sizes="100vw"
         className={`
           object-cover absolute top-0 left-0 transition-opacity 
-          // 🚨 FIX 2: Changed from duration-5000 (5s) to duration-1000 (1s)
-          duration-1000 
+          duration-1000 // 1 second transition (from last fix)
           ${isDarkVisible ? 'opacity-100' : 'opacity-0'}
         `}
       />
