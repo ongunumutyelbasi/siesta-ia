@@ -10,9 +10,14 @@ const IMAGE_PATHS = {
   dark: "/images/hero-dark.jpg",
 };
 
-// Timing variables (4s interval, 4s fade)
-const TRANSITION_INTERVAL = 4000; 
-const TRANSITION_DURATION_MS = 4000; 
+// 🚨 FIX 1: ADJUST TIMING 
+// Let's speed up the interval (how often it swaps) to 7 seconds.
+const TRANSITION_INTERVAL = 7000; 
+
+// Let's set a fast, noticeable transition duration of 1 second (1000ms).
+// Note: We don't use this variable, we use a Tailwind class, but keeping it 
+// here for clarity if you need a duration variable elsewhere.
+// const TRANSITION_DURATION_MS = 1000; 
 
 export function HeroImageTransition() {
   const [isDarkVisible, setIsDarkVisible] = useState(true);
@@ -47,14 +52,13 @@ export function HeroImageTransition() {
         sizes="100vw"
         className={`
           object-cover absolute top-0 left-0 transition-opacity 
-          duration-5000
+          // 🚨 FIX 2: Changed from duration-5000 (5s) to duration-1000 (1s)
+          duration-1000 
           ${isDarkVisible ? 'opacity-100' : 'opacity-0'}
         `}
       />
 
-      {/* 🚨 NEW DARK OVERLAY LAYER 🚨 */}
-      {/* Absolute positioning, covers the whole area, z-index 5 places it 
-         above the images (z-index default 0) but below the text (z-index 10) */}
+      {/* DARK OVERLAY LAYER */}
       <div className="absolute inset-0 bg-black/20 z-5"></div> 
 
       {/* Main SIESTA.ia Text Overlay */}
