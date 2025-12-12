@@ -42,7 +42,7 @@ export default function Home() {
 
         {/* 2. Featured Projects Section (REDUCED VERTICAL PADDING) */}
         <section className="py-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-medium mb-12 border-l-4 border-gray-900 pl-3">{featuredWorkHeading}</h2>
+          <h2 className="text-2xl font-medium mb-12 border-l-4 border-gray-200 pl-3">{featuredWorkHeading}</h2>
           
           <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-12">
             {featuredProjects.map((project, index) => (

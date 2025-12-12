@@ -110,18 +110,22 @@ export default function ProjectsIndexPage() {
           
         </div>
 
-        {/* 3. Footer / Next Steps */}
-        <div className="mt-32 pt-16 border-t border-gray-100 text-center">
-            <p className="text-gray-500 font-light mb-6">
-                Yeni bir proje için fikirleriniz mi var?
+        <section className="mt-20 py-16 bg-gray-50/70 border-t border-b border-gray-100 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-light mb-4 text-gray-800">
+              Birlikte Çalışalım!
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+              Yeni bir projeye başlamak için hazır mısınız? Kapsamlı portföyümüzü inceleyebilir veya size özgü vizyonunuzu görüşmek üzere stüdyomuzla irtibata geçebilirsiniz.
             </p>
-            <Link 
-                href="/iletisim" 
-                className="text-2xl md:text-3xl font-thin border-b border-gray-300 pb-1 hover:border-gray-900 transition-all hover:pb-2"
+            <a 
+              href="/iletisim"
+              className="inline-block px-8 py-3 bg-gray-900 text-white text-sm font-regular tracking-wider rounded-sm hover:bg-gray-700 transition-colors"
             >
-                Bizimle İletişime Geçin
-            </Link>
-        </div>
+              Bize Ulaşın
+            </a>
+          </div>
+        </section>
 
       </main>
     </div>
