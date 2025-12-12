@@ -79,7 +79,7 @@ export function Footer() {
   return (
 
     <footer className="w-full bg-[var(--offWhite)] mt-0 md:mt-0">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 md:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-8 md:pt-20">
         
         {/* 1. Main Grid Layout (Logo + Links) */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 border-b border-gray-100 pb-12">
@@ -129,7 +129,7 @@ export function Footer() {
         </div>
 
         {/* 2. Copyright and Legal Section */}
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center pt-8">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center pt-8 pb-8">
           
           {/* Copyright */}
           <p className="text-xs text-gray-400 font-light order-2 md:order-1 mt-4 md:mt-0">
