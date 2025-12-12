@@ -1,0 +1,91 @@
+/* app/globals.css */
+
+/* --- Custom Font Imports: Helvetica Now --- */
+
+/* Regular */
+@font-face {
+  font-family: 'Helvetica Now';
+  src: url('/fonts/Helvetica Now/HelveticaNowText-Regular.ttf') format('truetype');
+  font-weight: 400; /* Standard weight for Regular */
+  font-style: normal;
+  font-display: swap; /* Best practice for loading */
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Helvetica Now';
+  src: url('/fonts/Helvetica Now/HelveticaNowText-Bold.ttf') format('truetype');
+  font-weight: 700; /* Standard weight for Bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Helvetica Now';
+  src: url('/fonts/Helvetica Now/HelveticaNowText-Medium.ttf') format('truetype');
+  font-weight: 500; /* Standard weight for Medium */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Helvetica Now';
+  src: url('/fonts/Helvetica Now/HelveticaNowText-Light.ttf') format('truetype');
+  font-weight: 100; /* Standard weight for Light */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* You must repeat the @font-face block for every weight and italic variation you want to use. */
+/* For example, for Black: */
+@font-face {
+  font-family: 'Helvetica Now';
+  src: url('/fonts/Helvetica Now/HelveticaNowText-Black.ttf') format('truetype');
+  font-weight: 900; /* Standard weight for Black */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* For Light Italic: */
+@font-face {
+  font-family: 'Helvetica Now';
+  src: url('/fonts/Helvetica Now/HelveticaNowText-LightItalic.ttf') format('truetype');
+  font-weight: 300; /* Standard weight for Light */
+  font-style: italic; /* Use italic here */
+  font-display: swap;
+}
+
+
+/* --- Tailwind & Body Styling --- */
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --offWhite: #f9f9f9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-offWhite: var(--offWhite);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* 2. APPLY THE NEW FONT HERE */
+  font-family: 'Helvetica Now', sans-serif; 
+}

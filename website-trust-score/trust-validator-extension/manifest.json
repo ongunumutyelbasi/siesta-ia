@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Trust Validator",
+  "version": "1.0",
+  "description": "Checks the trust score of the current page using the local FastAPI service.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ]
+}
