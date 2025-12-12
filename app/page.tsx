@@ -82,7 +82,7 @@ export default function Home() {
               Birlikte Çalışalım!
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              Ready to begin a new project? Explore our full portfolio or connect with our studio to discuss your unique vision.
+              Yeni bir projeye başlamak için hazır mısınız? Kapsamlı portföyümüzü inceleyebilir veya size özgü vizyonunuzu görüşmek üzere stüdyomuzla irtibata geçebilirsiniz.
             </p>
             <a 
               href="/iletisim"
