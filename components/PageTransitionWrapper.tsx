@@ -1,18 +1,36 @@
 // components/PageTransitionWrapper.tsx
 "use client";
 
-import { motion } from 'framer-motion';
+// 🚨 FIX 1: Import Variants and Transition types
+import { motion, Variants, Transition } from 'framer-motion'; 
 import { usePathname } from 'next/navigation';
 import React from 'react';
 
 // Define the animation properties
-const variants = {
+// 🚨 FIX 2: Explicitly type the variants constant as Variants
+const variants: Variants = {
   // Initial state (before the page mounts)
   hidden: { opacity: 0, y: 20 },
+  
   // State when the page is fully mounted and visible
-  enter: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-  // State when the page is exiting (optional, but good for symmetry)
-  exit: { opacity: 0, y: -20, transition: { duration: 0.3, ease: "easeIn" } },
+  enter: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      duration: 0.5, 
+      ease: [0, 0, 0.2, 1]  // Standard cubic-bezier array for "easeOut"
+    } as Transition // 🚨 FIX 3: Cast the transition object to the Transition type
+  },
+  
+  // State when the page is exiting
+  exit: { 
+    opacity: 0, 
+    y: -20, 
+    transition: { 
+      duration: 0.3, 
+      ease: [0.4, 0, 1, 1] // Standard cubic-bezier array for "easeIn"
+    } as Transition // 🚨 FIX 4: Cast the transition object to the Transition type
+  },
 };
 
 interface PageTransitionWrapperProps {
@@ -20,8 +38,6 @@ interface PageTransitionWrapperProps {
 }
 
 export function PageTransitionWrapper({ children }: PageTransitionWrapperProps) {
-  // usePathname is crucial: it changes when the user navigates, 
-  // forcing Framer Motion to re-run the animation cycle.
   const pathname = usePathname();
 
   return (
