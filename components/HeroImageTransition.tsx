@@ -11,7 +11,7 @@ const IMAGE_PATHS = {
 };
 
 // Interval for continuous swapping (e.g., every 7 seconds after the first one)
-const CONTINUOUS_INTERVAL = 7000; 
+const CONTINUOUS_INTERVAL = 5000; 
 // 🚨 NEW: Delay before the FIRST transition starts (e.g., 500ms or 1000ms)
 const INITIAL_DELAY = 1000; // 0.5 seconds - Set this low for a snappy start
 
