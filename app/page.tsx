@@ -24,6 +24,18 @@ const featuredProjects: Project[] = [
     image: "/images/mutfak-1-1.jpg", 
     href: "/projeler/mutfak-tasarimi",
   },
+  {
+    title: "Ofis Projesi",
+    subtitle: "3ds Max Render",
+    image: "/images/ofis-1-1.jpg", 
+    href: "/projeler/ofis-projesi",
+  },
+  {
+    title: "Loft Daire",
+    subtitle: "3ds Max Render",
+    image: "/images/loft-1-1.jpg", 
+    href: "/projeler/loft-daire",
+  },
 ];
 
 const featuredWorkHeading = "Projeler"; 
