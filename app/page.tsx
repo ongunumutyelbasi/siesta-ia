@@ -27,13 +27,13 @@ const featuredProjects: Project[] = [
   {
     title: "Ofis Projesi",
     subtitle: "3ds Max Render",
-    image: "/images/ofis-1-1.jpg", 
+    image: "/images/concept-villa-1-2.jpg", 
     href: "/projeler/ofis-projesi",
   },
   {
     title: "Loft Daire",
     subtitle: "3ds Max Render",
-    image: "/images/loft-1-1.jpg", 
+    image: "/images/mutfak-1-2.jpg", 
     href: "/projeler/loft-daire",
   },
 ];
