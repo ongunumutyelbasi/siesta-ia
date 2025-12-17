@@ -52,7 +52,7 @@ export default function Home() {
                 className="group block relative"
               >
                 {/* Project Image */}
-                <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-100 mb-4 transition-all duration-500 group-hover:shadow-xl group-hover:scale-[1.01]">
+                <div className="relative w-full aspect-[16/9] overflow-hidden bg-gray-100 mb-4 transition-all duration-500 group-hover:shadow-xl group-hover:scale-[1.01]">
                   <Image
                     src={project.image}
                     alt={project.title}
