@@ -41,7 +41,7 @@ export default function Home() {
         </section>
 
         {/* 2. Featured Projects Section (REDUCED VERTICAL PADDING) */}
-        <section className="pt-12 pb-4 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section className="py-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-medium mb-12 border-l-4 border-gray-200 pl-3">{featuredWorkHeading}</h2>
           
           <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-12">
@@ -76,7 +76,7 @@ export default function Home() {
         </section>
 
         {/* 3. Call to Action/About Snippet */}
-        <section className="mt-20 py-16 bg-gray-50/70 border-t border-b border-gray-100 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 bg-gray-50/70 border-t border-b border-gray-100 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-gray-800">
               Birlikte Çalışalım!
