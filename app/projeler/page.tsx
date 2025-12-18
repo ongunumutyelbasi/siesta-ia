@@ -109,25 +109,26 @@ export default function ProjectsIndexPage() {
           ))}
           
         </div>
-
-        <section className="mt-20 py-16 bg-gray-50/70 border-t border-b border-gray-100 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-light mb-4 text-gray-800">
-              Birlikte Çalışalım!
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              Yeni bir projeye başlamak için hazır mısınız? Kapsamlı portföyümüzü inceleyebilir veya size özgü vizyonunuzu görüşmek üzere stüdyomuzla irtibata geçebilirsiniz.
-            </p>
-            <a 
-              href="/iletisim"
-              className="inline-block px-8 py-3 bg-gray-900 text-white text-sm font-regular tracking-wider rounded-sm hover:bg-gray-700 transition-colors"
-            >
-              Bize Ulaşın
-            </a>
-          </div>
-        </section>
-
       </main>
+
+      {/* 🚨 FULL-WIDTH CONTACT SECTION 🚨 */}
+      <section className="py-16 bg-gray-50/70 border-t border-b border-gray-100 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-light mb-4 text-gray-800">
+            Birlikte Çalışalım!
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+            Yeni bir projeye başlamak için hazır mısınız? Kapsamlı portföyümüzü inceleyebilir veya size özgü vizyonunuzu görüşmek üzere stüdyomuzla irtibata geçebilirsiniz.
+          </p>
+          <a 
+            href="/iletisim"
+            className="inline-block px-8 py-3 bg-gray-900 text-white text-sm font-regular tracking-wider rounded-sm hover:bg-gray-700 transition-colors"
+          >
+            Bize Ulaşın
+          </a>
+        </div>
+      </section>
+
     </div>
   );
 }
