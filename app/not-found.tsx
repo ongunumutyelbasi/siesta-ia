@@ -13,7 +13,7 @@ export default function NotFound() {
         </h2>
         <p className="mt-4 text-gray-500 font-light max-w-sm mx-auto">
           Aradığınız sayfa mevcut değil veya taşınmış olabilir. 
-          Sakinliğimizi koruyarak ana sayfaya dönebiliriz.
+          Ana sayfaya dönebilir veya başka bir sayfayı ziyaret edebilirsiniz.
         </p>
       </div>
 
