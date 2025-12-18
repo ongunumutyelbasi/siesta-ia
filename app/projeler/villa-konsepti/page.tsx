@@ -104,7 +104,7 @@ export default function ProjectPage() {
         <div className="mt-32 border-t border-gray-100 pt-12 flex justify-between items-center">
             <span className="text-gray-400 text-sm">SIESTA.ia Project Archive</span>
             <Link 
-                href="/contact" 
+                href="/iletisim" 
                 className="text-lg font-medium hover:underline decoration-1 underline-offset-4"
             >
                 Birlikte Çalışalım &rarr;
