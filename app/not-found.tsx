@@ -19,7 +19,7 @@ export default function NotFound() {
 
       <Link 
         href="/" 
-        className="mt-10 px-8 py-3 border border-gray-900 text-sm font-light hover:bg-gray-900 hover:text-white transition-all duration-300"
+        className="mt-10 px-8 py-3 border bg-gray-900 border-gray-900 text-sm font-light hover:bg-gray-700 hover:text-white transition-all duration-300"
       >
         Ana Sayfaya Dön
       </Link>
