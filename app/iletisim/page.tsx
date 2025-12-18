@@ -156,37 +156,47 @@ export default function ContactPage() {
             {/* Address */}
             <div>
               <div className="flex items-center space-x-3 mb-2">
-              <MapPin className="w-5 h-5 text-gray-500" />
-              <h3 className="text-lg font-medium">Stüdyo</h3>
+                <MapPin className="w-5 h-5 text-gray-500" />
+                <h3 className="text-lg font-medium">Stüdyo</h3>
               </div>
               <p className="text-gray-600 font-light leading-relaxed">
-              SIESTA Interior Architecture<br />
-              123 Design District Rd, Suite 400<br />
-              New York, NY 10012, USA
+                SIESTA Interior Architecture<br />
+                Gümüşsuyu, Beyoğlu<br />
+                İstanbul, TR
               </p>
             </div>
 
             {/* Phone */}
             <div>
               <div className="flex items-center space-x-3 mb-2">
-              <Phone className="w-5 h-5 text-gray-500" />
-              <h3 className="text-lg font-medium">Telefon</h3>
+                <Phone className="w-5 h-5 text-gray-500" />
+                <h3 className="text-lg font-medium">Telefon</h3>
               </div>
               <p className="text-gray-600 font-light">
-              +90 (534) 078 44 19
+                <a 
+                  href="tel:+905340784419" 
+                  className="relative inline-block group hover:text-gray-900 transition-colors duration-300"
+                >
+                  +90 (534) 078 44 19
+                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
+                </a>
               </p>
             </div>
 
             {/* Email */}
             <div>
               <div className="flex items-center space-x-3 mb-2">
-              <Mail className="w-5 h-5 text-gray-500" />
-              <h3 className="text-lg font-medium">E-posta</h3>
+                <Mail className="w-5 h-5 text-gray-500" />
+                <h3 className="text-lg font-medium">E-posta</h3>
               </div>
               <p className="text-gray-600 font-light">
-              <a href="mailto:saglikhaluk@outlook.com" className="hover:text-gray-900 transition-colors">
-              saglikhaluk@outlook.com
-              </a>
+                <a 
+                  href="mailto:saglikhaluk@outlook.com" 
+                  className="relative inline-block group hover:text-gray-900 transition-colors duration-300"
+                >
+                  saglikhaluk@outlook.com
+                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
+                </a>
               </p>
             </div>
           </section>
