@@ -25,7 +25,7 @@ export default function AboutUsPage() {
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       
       {/* 🚨 CONSTRAINED CONTENT 🚨 */}
-      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-16">
         
         {/* Header Section */}
         <header className="mb-16 md:mb-24">

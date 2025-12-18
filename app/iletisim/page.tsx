@@ -72,7 +72,7 @@ export default function ContactPage() {
         </div>
       )}
 
-      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-16">
         <header className="mb-16 md:mb-24">
           <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-tight mb-4">İletişim</h1>
         </header>

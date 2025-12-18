@@ -47,7 +47,7 @@ export default function ProjectsIndexPage() {
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       
       {/* Main Content Wrapper */}
-      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-16">
         
         {/* 1. Page Header */}
         <header className="mb-20 md:mb-32">
