@@ -149,19 +149,49 @@ export default function ContactPage() {
             )}
           </section>
 
-          {/* Right Column (Info) */}
+          {/* Right Column: Studio Details and Location */}
           <section className="space-y-10 lg:pl-8">
             <h2 className="text-3xl font-medium mb-8 lg:mb-0">İletişim Bilgileri</h2>
+
+            {/* Address */}
             <div>
               <div className="flex items-center space-x-3 mb-2">
-                <MapPin className="w-5 h-5 text-gray-500" />
-                <h3 className="text-lg font-medium">Stüdyo</h3>
+              <MapPin className="w-5 h-5 text-gray-500" />
+              <h3 className="text-lg font-medium">Stüdyo</h3>
               </div>
-              <p className="text-gray-600 font-light leading-relaxed italic">Gümüşsuyu, Beyoğlu, TR</p>
+              <p className="text-gray-600 font-light leading-relaxed">
+              SIESTA Interior Architecture<br />
+              123 Design District Rd, Suite 400<br />
+              New York, NY 10012, USA
+              </p>
+            </div>
+
+            {/* Phone */}
+            <div>
+              <div className="flex items-center space-x-3 mb-2">
+              <Phone className="w-5 h-5 text-gray-500" />
+              <h3 className="text-lg font-medium">Telefon</h3>
+              </div>
+              <p className="text-gray-600 font-light">
+              +90 (534) 078 44 19
+              </p>
+            </div>
+
+            {/* Email */}
+            <div>
+              <div className="flex items-center space-x-3 mb-2">
+              <Mail className="w-5 h-5 text-gray-500" />
+              <h3 className="text-lg font-medium">E-posta</h3>
+              </div>
+              <p className="text-gray-600 font-light">
+              <a href="mailto:saglikhaluk@outlook.com" className="hover:text-gray-900 transition-colors">
+              saglikhaluk@outlook.com
+              </a>
+              </p>
             </div>
           </section>
-        </div>
-      </main>
+          </div>
+          </main>
 
       {/* --- CSS ANIMATION FOR PROGRESS BAR --- */}
       <style jsx global>{`
